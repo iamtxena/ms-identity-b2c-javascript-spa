@@ -10,14 +10,15 @@ function callApi(endpoint, token) {
         headers: headers
       };
   
-    logMessage('Calling Web API...');
+    logMessage('Calling US Social Security Administration.');
+    logMessage('Checking your eligibility to vaccination group...');
     
     fetch(endpoint, options)
       .then(response => response.json())
       .then(response => {
 
         if (response) {
-          logMessage('Web API responded: ' + response.name);
+          logMessage(`Vaccionation Appointment ${response.grantStatus} to ${response.name}`);
         }
         
         return response;
