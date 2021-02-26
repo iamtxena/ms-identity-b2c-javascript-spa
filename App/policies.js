@@ -5,20 +5,20 @@
  */
 const b2cPolicies = {
     names: {
-        signUpSignIn: "B2C_1_signupsignin1_webapi",
+        signUpSignIn: "B2C_1_signupsignin_covid",
         forgotPassword: "b2c_1_reset",
         editProfile: "b2c_1_edit_profile"
     },
     authorities: {
         signUpSignIn: {
-            authority: "https://unchealthcentre.b2clogin.com/unchealthcentre.onmicrosoft.com/B2C_1_signupsignin1_webapi",
+            authority: "https://demossa.b2clogin.com/demossa.onmicrosoft.com/B2C_1_signupsignin_covid",
         },
         forgotPassword: {
-            authority: "https://unchealthcentre.b2clogin.com/unchealthcentre.onmicrosoft.com/b2c_1_reset",
+            authority: "https://demossa.b2clogin.com/demossa.onmicrosoft.com/b2c_1_reset",
         },
         editProfile: {
-            authority: "https://unchealthcentre.b2clogin.com/unchealthcentre.onmicrosoft.com/b2c_1_edit_profile"
+            authority: "https://demossa.b2clogin.com/demossa.onmicrosoft.com/b2c_1_edit_profile"
         }
     },
-    authorityDomain: "unchealthcentre.b2clogin.com"
+    authorityDomain: "demossa.b2clogin.com"
 }
