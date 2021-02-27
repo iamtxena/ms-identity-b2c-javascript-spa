@@ -11,14 +11,14 @@ function callApi(endpoint, token) {
       };
   
     logMessage('Calling US Social Security Administration.');
-    logMessage('Checking your eligibility to vaccination group...');
+    logMessage('Checking your eligibility to vaccination group to schedule an appointment...');
     
     fetch(endpoint, options)
       .then(response => response.json())
       .then(response => {
 
         if (response) {
-          logMessage(`Vaccionation Appointment ${response.grantStatus} to ${response.name}`);
+          logMessage(`Vaccination Appointment ${response.grantStatus} to ${response.name}`);
         }
         
         return response;
