@@ -38,8 +38,10 @@ function selectAccount() {
         console.log("Multiple accounts detected.");
     } else if (currentAccounts.length === 1) {
         accountId = currentAccounts[0].homeAccountId;
-        username = currentAccounts[0].username;
-        welcomeUser(username);
+        // username = currentAccounts[0].username;
+        loggedInName = currentAccounts[0].name;
+        // console.log(currentAccounts[0]);
+        welcomeUser(loggedInName);
     }
 }
 
